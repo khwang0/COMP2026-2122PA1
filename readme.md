@@ -6,13 +6,15 @@
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Piazza](https://piazza.com/class/kodsr5zs2km5ls)
 * Due: Week 7 
-* Download the starter code: [here](Sudoku.java)
+* Download the starter code: [Sudoku.java](Sudoku.java) and the puzzle [sudoku1.txt](sudoku1.txt)
 * Download the demo program: [here](demo.jar)
 
-> To run the demo program type the following in your terminal:
+> To run the demo program, download the puzzle file `sudoku1.txt` and `demo.jar` under the same directory type the following in your terminal:
 > ```java
-> chcp 65001
-> java -jar -Dconsole.encoding=UTF-8 -Dfile.encoding=UTF-8 demo.jar
+> > chcp 65001
+> > java -jar -Dconsole.encoding=UTF-8 -Dfile.encoding=UTF-8 demo.jar
+> Please enter a filename:
+> sudoku1.txt
 > ```
 > Note: your terminal may not be able to display some unicode characters properly. Please don't panic if it is the case.
 
