@@ -1,3 +1,16 @@
+/***
+ * Name: 
+ * ID:
+ * Section: 
+ *
+ * Disclaimer: I have not committed any form of plagiarism. I did not disclose any
+ *             part of my code to my classmate. I did not upload my code to any 
+ *             website or public repository. 
+ *
+ * Shall you have any problem in doing the assignment, please feel free to ask 
+ * question on Piazza. However, NEVER post your code there.
+ */
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -76,7 +89,7 @@ public class Sudoku {
      *         The number 0, can be repeated.
      */
     boolean checkBoxLogic(int[][] cellsOfBox) {
-	//TODO
+	    //TODO
     }
 
     /**
@@ -87,7 +100,7 @@ public class Sudoku {
      *         The number 0, can be repeated.
      */
     boolean checkLineLogic(int[] cellsOfLine) {
-	// TODO
+	    // TODO
     }
 
     /**
@@ -96,7 +109,7 @@ public class Sudoku {
      * @return true if no problem (not need to be fully filled)
      */
     boolean isValid(int[][][] cells) {
-	//TODO
+	    //TODO
     }
 
 
@@ -106,7 +119,7 @@ public class Sudoku {
      * @return true if the sudoku puzzle is completely filled and valid, false if otherwise.
      */
     boolean checkWin(int[][][] cells) {
-	//TODO
+	    //TODO
     }
 
     /**
@@ -117,7 +130,7 @@ public class Sudoku {
      * @return a filename picked by user.
      */
     String filePicking() {
-	//TODO
+	    //TODO
     }
 
 
@@ -126,7 +139,7 @@ public class Sudoku {
      * Provide a one line comment about the purpose of each symbol.
      */
     void printHelpMenu() {
-	//TODO
+	    //TODO
     }
 
 
@@ -141,6 +154,7 @@ public class Sudoku {
      * @param col the col of where the highlighted cell is.
      */
     void advancePrint(int[][][] cells, int row, int col) {
+        //TODO
     }
 
     /**
@@ -152,10 +166,26 @@ public class Sudoku {
      * @param s a number '0' to '9'
      */
     void mark(int row, int col, int[][][] cells, char s) {
+        //TODO
+    }
+
+   /**
+     * To compare if the original cells are kept in the cells
+     *
+     * For example, cell 1 1 in original cell is 5. This number should not be overwritten by
+     * the player during the game. Otherwise the player can win the game easily. This method
+     * simply check if the givens cells in the original cells are preserved.
+     *
+     * @param cells the cells to be checked
+     * @param originals the original cells
+     * @return true if the number in original cells is kept in cells.
+     */
+    boolean same(int[][][]cells, int[][][]originals) {
+        //TODO
     }
 
     /**
-     * This method is given. It is finished. Don't modify it.
+     * This method is given, don't modify it.
      */
     void runOnce() {
         int[][][] cells = new int[9][3][3];
@@ -168,26 +198,39 @@ public class Sudoku {
             cells[8] = new int[][]{{4, 0, 3}, {1, 5, 6}, {0, 8, 2}};
         }
 
+        //backup the originalCells
+        int[][][] originalCells = new int[9][3][3];
+        for (int i = 0; i < 9; i++)
+            for (int j = 0; j < 3; j++)
+                for (int k = 0; k < 3; k++)
+                    originalCells[i][j][k] = cells[i][j][k];
 
         simplePrint(cells);
         Scanner scanner = new Scanner(System.in);
 
         int row = 0, col = 0;
+        boolean quit = false;
         advancePrint(cells, row, col);
-        for (char s = scanner.next().charAt(0); ; s = scanner.next().charAt(0)) {
+        for (char s = scanner.next().charAt(0); !quit ; s = scanner.next().charAt(0)) {
 
             switch (s) {
-                case 'a': col = (col - 1) % 9; break;
+                case 'a': col = (col + 8) % 9; break;
                 case 's': row = (row + 1) % 9; break;
-                case 'w': row = (row - 1) % 9; break;
+                case 'w': row = (row + 8) % 9; break;
                 case 'd': col = (col + 1) % 9; break;
                 case '.': mark(row, col, cells, '0'); break;
                 case 'c':
                     if (!isValid(cells))
                         System.out.println("The puzzle is invalid!");
+                    else if (!same(cells, originalCells))
+                        System.out.println("This is not the same as the original");
                     else
                         System.out.println("So far so good!");
                     break;
+                case 'q':
+                    quit = true;
+                    System.out.println("Quit");
+                    continue;
                 case 'h':
                     //print help menu
                     printHelpMenu();
@@ -198,7 +241,7 @@ public class Sudoku {
                     }
             }
             advancePrint(cells, row, col);
-            if (checkWin(cells))
+            if (checkWin(cells) && same(cells, originalCells))
                 break;
         }
         System.out.println("Yeah! you have solved the puzzle!");

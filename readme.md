@@ -5,7 +5,9 @@
 
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Piazza](https://piazza.com/class/kodsr5zs2km5ls)
-* Due: Week 7 
+* Due: 
+  * UAT Due: 11:59am (noon), 11th October, 2021 (Monday)
+  * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 
 * Download the starter code: [Sudoku.java](Sudoku.java) and the puzzle [sudoku1.txt](sudoku1.txt)
 * Download the demo program: [here](demo.jar)
 
@@ -27,15 +29,15 @@ Students are expected to have some practice on arrays/2D arrays/parameter passin
 
 # Introduction
 
-You are going to complete the sudoku program! Open Sudoku.java and complete the methods stated in the skeleton code. Some of these methods are very straight forward while some of them isn't that easy. Make sure you can follow the instructions given at the top of each method.
+You are going to complete the sudoku program! Open [Sudoku.java](Sudoku.java) and complete the methods stated in the skeleton code. Some of these methods are very straight forward while some of them isn't that easy. Make sure you can follow the instructions given at the top of each method.
 
-A sample program is given to you. When there is something you are not sure, you can take a look at the sample program to decide what to do.
+A [sample program](demo.jar) is given to you. When there is something you are not sure, you can take a look at the sample program to decide what to do.
 
 Some methods are labeled as completed or given. Please don't make any change on those methods. You are not supposed to modify them.
 
 # Explanation of the game of Sudoku
 
-You can skip this section if you have some experiences in playing Sudoku puzzles. It is a grid of 9x9 block with some given digits as shown in the figure. The puzzle has a unique solution such that all empty cells are filled with the digit 1 to 9 one each on each row, each column and each 3x3 boxes. A fast growing youtube channel [Cracking the Cryptic](https://www.youtube.com/c/CrackingTheCryptic) contains a lot of interesting puzzle released daily.
+You can skip this section if you have some experiences in playing Sudoku puzzles. It is a grid of 9x9 blocks with some given digits as shown in the figure. The puzzle has a unique solution such that all empty cells are filled with the digit 1 to 9 one each on each row, each column and each 3x3 boxes. A fast growing youtube channel [Cracking the Cryptic](https://www.youtube.com/c/CrackingTheCryptic) contains a lot of interesting puzzle released daily.
 
 ![](jovi_al.png)
 
@@ -55,7 +57,7 @@ You can refer to the demo program for the correct behavior of the program. Your 
 s
 ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ 
 │ 1 2 3 │       │       │ 
-│ 4 5 6 │ ▓     │       │ 
+│ 4 5 6 │ ▪     │       │ 
 │ 7 8 9 │       │       │ 
 ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ 
 │       │ 1   3 │       │ 
@@ -83,7 +85,7 @@ a
 d
 ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ 
 │ 1 2 3 │       │       │ 
-│ 4 5 6 │ ▓     │       │ 
+│ 4 5 6 │ ▪     │       │ 
 │ 7 8 9 │       │       │ 
 ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ 
 │       │ 1   3 │       │ 
@@ -113,8 +115,8 @@ d
 
 ## Programming Style and Documentation 
 
-Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required.  You should use constants wherever possible.  Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
-Header Block For your java file, there must be a header at the beginning of the file, with (1) a short description explaining the details of your program design; (2) your name; and (3) your UID. 
+Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
+Header Block For your java file, there must be a header at the beginning of the file, with your name and your UID. 
 
 ### Method Header Block 
 For each method, there should be a header with (1) a brief description about what the method does and how it is achieved; (2) a brief note explaining the parameters of the method (if any); and (3) a brief note explaining the return value of the method (if applicable). 
@@ -146,13 +148,14 @@ if (lateHour > 0) {
  
  ### Plagiarism
 
- Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
+ Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the act of plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
 
 ## Marking Scheme 
 This assignment is worth 9% of the course mark.  There are three elements in the marking scheme: 
 * 5% - Understanding the Assignment Test (UAT)
 * 90% - a working program that functions as specified 
 * 5% - Programming style and documentation 
+* -50% - if you define any class variable (field), addition class, or change the method `runOnce`.
 
 Please note that submitting a program that cannot be compiled would result in very low mark. 
 
