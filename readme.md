@@ -113,6 +113,20 @@ d
 
 ```
 
+
+## Understanding the Assignment Test (UAT)
+
+This part is independent to your programming code. You will need to answer the following short questions by **another due date**.
+Submit your answers on Moodle. 
+
+1. Which method is responsible to mark a digit into the cell?
+2. Which method is responsible to check if there are duplicate values in a box?
+3. What value will the above method return if there are duplicate values in a box?
+
+
+
+---
+
 ## Programming Style and Documentation 
 
 Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
@@ -124,7 +138,9 @@ For each method, there should be a header with (1) a brief description about wha
 ### Inline Comments 
 Wherever necessary and appropriate, you should add inline comments to explain the execution flow of your program. 
 
- 
+
+
+
 
 ## Submission 
 For submission, zip the src folder of your IntelliJ project, name the zip file as “XXXXXXXX_assign1.zip” (where XXXXXXXX is your Student ID number), and upload it to Moodle.  If you go for the bonus marks, you should also submit your short explanation inside this zip file. 
@@ -145,7 +161,11 @@ if (lateHour > 0) {
                 mark &= 0;
 }
 ```
- 
+
+
+
+
+
  ### Plagiarism
 
  Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the act of plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
@@ -163,15 +183,5 @@ Please note that submitting a program that cannot be compiled would result in ve
 
 ## Interview 
 Should the teaching team see fit, students may be requested to attend an interview to explain about their program.  Students failing to attend such interview or to demonstrate a good understanding of their own program may result in mark deduction. 
-
-
-## Understanding the Assignment (UAT)
-
-Answer the following question that on Moodle.
-Due: TBD
-1. Which method is responsible to mark a digit into the cell?
-2. Which method is responsible to check if there are duplicate values in a box?
-3. What value will the above method return if there are duplicate values in a box?
-
 
 
