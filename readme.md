@@ -141,15 +141,12 @@ Submit your answers on Moodle.
 ## Programming Style and Documentation 
 
 Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
-Header Block For your java file, there must be a header at the beginning of the file, with your name and your UID. 
 
-### Method Header Block 
-For each method, there should be a header with (1) a brief description about what the method does and how it is achieved; (2) a brief note explaining the parameters of the method (if any); and (3) a brief note explaining the return value of the method (if applicable). 
+### Header Block 
+For your java file, there must be a header at the beginning of the file, with your name and your UID. 
 
 ### Inline Comments 
 Wherever necessary and appropriate, you should add inline comments to explain the execution flow of your program. 
-
-
 
 
 
