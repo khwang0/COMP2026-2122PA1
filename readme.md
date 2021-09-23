@@ -5,6 +5,7 @@
 
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Piazza](https://piazza.com/class/kodsr5zs2km5ls)
+* Assignment Website: [GitHub](https://github.com/khwang0/COMP2026-2122PA1)
 * Due: 
   * UAT Due: 11:59am (noon), 11th October, 2021 (Monday)
   * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 

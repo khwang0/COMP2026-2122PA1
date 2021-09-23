@@ -8,7 +8,7 @@
  *             website or public repository. 
  *
  * Shall you have any problem in doing the assignment, please feel free to ask 
- * question on Piazza. However, NEVER post your code there.
+ * questions on Piazza. However, NEVER post your code there.
  */
 
 import java.io.File;
@@ -31,8 +31,119 @@ public class Sudoku {
      *              should contains the number on i-th row, scanned from left to right.
      */
     int[][] arrayTo2D(int [][][] array) {
-	//TODO
+	    //TODO
     }
+
+
+    /**
+     * Check if there is any duplicate inside a box Logic
+     *
+     * @param cellsOfBox a 3x3 box of a Sudoku. Each cell should contain the number 0 to 9
+     * @return true if no problem (may not be fully filled up), or false if any one of the number 
+     *         1 to 9 is repeated inside the box. The number 0, can be repeated.
+     */
+    boolean checkBoxLogic(int[][] cellsOfBox) {
+	    //TODO
+    }
+
+    /**
+     * Check if there is any duplicate on a line.
+     *
+     * @param cellsOfLine an array that contains 9 cells which may contain the number 0 to 9.
+     * @return true if no problem (may not be fully filled up), or false if any one of the number 
+     *         1 to 9 is repeated on the line. The number 0, can be repeated.
+     */
+    boolean checkLineLogic(int[] cellsOfLine) {
+	    // TODO
+    }
+
+    /**
+     * Check problems of the entire grid
+     * @param cells 3D array that being checked.
+     * @return true if no problem (not need to be fully filled)
+     */
+    boolean isValid(int[][][] cells) {
+	    //TODO
+    }
+
+
+    /**
+     * Check if the sudoku completes
+     * @param cells 3D array that being checked.
+     * @return true if the sudoku puzzle is completely filled and valid, 
+     *         false if otherwise.
+     */
+    boolean checkWin(int[][][] cells) {
+	    //TODO
+    }
+
+    /**
+     * This method should prompt the user to enter a filename and accept the user's input.
+     * It is possible that the user input an invalid filename or the there isn't such filename.
+     * This method does not valid the user's inputs.
+     *
+     * @return a filename picked by user.
+     */
+    String filePicking() {
+	    //TODO
+    }
+
+
+    /**
+     * Print the Help Menu. Please try to understand the switch case in runOnce and 
+     * Provide a one line comment about the purpose of each symbol.
+     */
+    void printHelpMenu() {
+	    //TODO
+        System.out.println("Help Menu:");
+        System.out.println("------------------");
+        System.out.println("q\t\tQuit the program");
+        System.out.println("This is part of the solution. Please work on your own");
+    }
+
+
+    /**
+     * To print the Sudoku in a nicer looking way. All horizontal borders should be printed with the char \u2500. All vertical border should
+     * be printed with the char \u2502. All cross-point should be printed with the symbol \u253c. The highlighted cell, (at the position indicated by row and col),
+     * should be \u25aa if it is empty or should be \u2081, \u2082,..., \u2089 depends on the value of that cell. Please refer to the sample program
+     * and see how the program should work.
+     *
+     * @param cells 3D cells that is going to be printed.
+     * @param row the row of where the highlighted cell is.
+     * @param col the col of where the highlighted cell is.
+     */
+    void advancePrint(int[][][] cells, int row, int col) {
+        //TODO
+    }
+
+    /**
+     * To write a number into the sudoku 3D array with the given row, col and char s.
+     *
+     * @param row indicate which row (0-8) that the cells is going to be marked
+     * @param col indicates which col (0-8) that the cells is going to be marked
+     * @param cells the 3D array that is going to be marked.
+     * @param s a number '0' to '9'
+     */
+    void mark(int row, int col, int[][][] cells, char s) {
+        //TODO
+    }
+
+   /**
+     * To compare if the original cells are kept in the cells
+     *
+     * For example, cell 1 1 in original cell is 5. This number should not be overwritten by
+     * the player during the game. Otherwise the player can win the game easily. This method
+     * simply check if the givens cells in the original cells are preserved.
+     *
+     * @param cells the cells to be checked
+     * @param originals the original cells
+     * @return true if the number in original cells is kept in cells.
+     */
+    boolean same(int[][][]cells, int[][][]originals) {
+        //TODO
+    }
+
+
 
     /**
      * The implementation of this method is given. It is completed. This methods calls another method arrayTo2D.
@@ -81,108 +192,7 @@ public class Sudoku {
         return true;
     }
 
-    /**
-     * Check if there is any duplicate inside a box Logic
-     *
-     * @param cellsOfBox a 3x3 box of sudoku. Each cell should contain the number 0 to 9
-     * @return true if no problem (may not be fully filled up). False if any one of the number 1 to 9 is repeated inside the box.
-     *         The number 0, can be repeated.
-     */
-    boolean checkBoxLogic(int[][] cellsOfBox) {
-	    //TODO
-    }
 
-    /**
-     * Check if there is any duplicate on a line.
-     *
-     * @param cellsOfLine an array that contains 9 cells which may contain the number 0 to 9.
-     * @return true if no problem (may not be fully filled up). False if any one of the number 1 to 9 is repeated on the line.
-     *         The number 0, can be repeated.
-     */
-    boolean checkLineLogic(int[] cellsOfLine) {
-	    // TODO
-    }
-
-    /**
-     * Check problems of the entire grid
-     * @param cells 3D array that being checked.
-     * @return true if no problem (not need to be fully filled)
-     */
-    boolean isValid(int[][][] cells) {
-	    //TODO
-    }
-
-
-    /**
-     * Check if the sudoku completes
-     * @param cells 3D array that being checked.
-     * @return true if the sudoku puzzle is completely filled and valid, false if otherwise.
-     */
-    boolean checkWin(int[][][] cells) {
-	    //TODO
-    }
-
-    /**
-     * This method should prompt the user to enter a filename and accept the user's input
-     * It is possible that the user input an invalid filename or the there isn't such filename.
-     * This method does not valid the user's inputs.
-     *
-     * @return a filename picked by user.
-     */
-    String filePicking() {
-	    //TODO
-    }
-
-
-    /**
-     * Print the Help Menu. Please try to understand the switch case in runOnce and 
-     * Provide a one line comment about the purpose of each symbol.
-     */
-    void printHelpMenu() {
-	    //TODO
-    }
-
-
-    /**
-     * To print the sudoku in a nicer looking way. All horizontal borders should be printed with the char \u2501. All vertical border should
-     * be printed with the char \u2502. All cross-point should be printed with the symbol \u2540. The highlighted cell, (at the position indicated by row and col),
-     * should be \u2593 if it is empty or should be \u2081, \u2082,..., \u2089 depends on the value of that cell. Please refer to the sample program
-     * and see how the program should work.
-     *
-     * @param cells 3D cells that is going to be printed.
-     * @param row the row of where the highlighted cell is.
-     * @param col the col of where the highlighted cell is.
-     */
-    void advancePrint(int[][][] cells, int row, int col) {
-        //TODO
-    }
-
-    /**
-     * To write a number into the sudoku 3D array with the given row, col and char s.
-     *
-     * @param row indicate which row (0-8) that the cells is going to be marked
-     * @param col indicates which col (0-8) that the cells is going to be marked
-     * @param cells the 3D array that is going to be marked.
-     * @param s a number '0' to '9'
-     */
-    void mark(int row, int col, int[][][] cells, char s) {
-        //TODO
-    }
-
-   /**
-     * To compare if the original cells are kept in the cells
-     *
-     * For example, cell 1 1 in original cell is 5. This number should not be overwritten by
-     * the player during the game. Otherwise the player can win the game easily. This method
-     * simply check if the givens cells in the original cells are preserved.
-     *
-     * @param cells the cells to be checked
-     * @param originals the original cells
-     * @return true if the number in original cells is kept in cells.
-     */
-    boolean same(int[][][]cells, int[][][]originals) {
-        //TODO
-    }
 
     /**
      * This method is given, don't modify it.
@@ -211,7 +221,7 @@ public class Sudoku {
         int row = 0, col = 0;
         boolean quit = false;
         advancePrint(cells, row, col);
-        for (char s = scanner.next().charAt(0); !quit ; s = scanner.next().charAt(0)) {
+        for (char s = scanner.next().charAt(0); !quit ;) {
 
             switch (s) {
                 case 'a': col = (col + 8) % 9; break;
@@ -241,9 +251,12 @@ public class Sudoku {
                     }
             }
             advancePrint(cells, row, col);
-            if (checkWin(cells) && same(cells, originalCells))
+            if (checkWin(cells) && same(cells, originalCells)) {
+                System.out.println("Yeah! you have solved the puzzle!");
                 break;
+            }
+            s = scanner.next().charAt(0);
         }
-        System.out.println("Yeah! you have solved the puzzle!");
+        
     }
 }
