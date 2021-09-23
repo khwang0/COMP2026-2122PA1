@@ -140,7 +140,7 @@ Submit your answers on Moodle.
 
 ## Programming Style and Documentation 
 
-Good programming style (indentation, comments…) is always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
+Good programming style (indentation, comments) are always essential.  Blank lines, spaces between operators/variables (wherever appropriate) and meaningful variable names are required. Your program should be properly indented.  Good choice of variable names and method names is also essential.  Your program must have proper internal documentation, as described below: 
 
 ### Header Block 
 For your java file, there must be a header at the beginning of the file, with your name and your UID. 
@@ -151,7 +151,7 @@ Wherever necessary and appropriate, you should add inline comments to explain th
 
 
 ## Submission 
-For submission, zip the src folder of your IntelliJ project, name the zip file as “XXXXXXXX_assign1.zip” (where XXXXXXXX is your Student ID number), and upload it to Moodle.  If you go for the bonus marks, you should also submit your short explanation inside this zip file. 
+For submission upload the file `Sudoku.java` to Moodle.  
 
 Please be reminded that both the **Late Penalty Rule** and the **Penalty for Plagiarism** are applied strictly to all submissions of this course (including this assignment).   
 
@@ -176,7 +176,7 @@ if (lateHour > 0) {
 
  ### Plagiarism
 
- Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the act of plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you receive a F directly.
+ Plagiarism is a serious offence and can be easily detected. Please don't share your code to your classmate even if they are threatening you with friendship. If they don't have the ability to work on something that can compile, they would not be able to change your code to a state that we can't detect the act of plagiarism. For the first commit of plagiarism, regardless you shared your code or copied code from others, you will receive 0 with an addition of 5 mark penalty. If you commit plagiarism twice, your case will be presented in the exam board and you will receive a F directly.
 
 ## Marking Scheme 
 This assignment is worth 9% of the course mark.  There are three elements in the marking scheme: 
@@ -185,7 +185,7 @@ This assignment is worth 9% of the course mark.  There are three elements in the
 * 5% - Programming style and documentation 
 * -50% - if you define any class variable (field), addition class, or change the method `runOnce`.
 
-Please note that submitting a program that cannot be compiled would result in very low mark. 
+Please note that submitting a program that cannot be compiled would result in a very low mark. 
 
  
 
