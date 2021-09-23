@@ -10,13 +10,20 @@
   * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 
 * Download the starter code: [Sudoku.java](Sudoku.java) and the puzzle [sudoku1.txt](sudoku1.txt)
 * Download the demo program: [here](demo.jar)
+* Download everything from the assignment: [here](./archive/refs/heads/master.zip)
 
-> To run the demo program, download the puzzle file `sudoku1.txt` and `demo.jar` under the same directory type the following in your terminal:
-> ```java
-> > chcp 65001
+> To run the demo program on Windows, download the puzzle file `sudoku1.txt` and `demo.jar` under the same directory type the following in your terminal:
+> 
+> **For Windows**
+> ```sh
+> > > chcp 65001
 > > java -jar -Dconsole.encoding=UTF-8 -Dfile.encoding=UTF-8 demo.jar
 > Please enter a filename:
 > sudoku1.txt
+> ```
+> **For macOS**
+> ```sh
+> > java -jar demo.jar
 > ```
 > Note: your terminal may not be able to display some unicode characters properly. Please don't panic if it is the case.
 
@@ -52,7 +59,10 @@ You are given the skeleton code [Sudoku.java](Sudoku.java). Complete all methods
 
 # Demo
 
-You can refer to the demo program for the correct behavior of the program. Your program may behave as follow if it is implemented correctly:
+You can refer to the demo program for the correct behavior of the program. Your program may behave as follow if it is implemented correctly. (Note: this puzzle does not have a unique solution, it is placed here because it is simple.)
+
+
+
 ```txt
 s
 ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ ─ ─ ─ ┼ 
@@ -119,7 +129,7 @@ d
 This part is independent to your programming code. You will need to answer the following short questions by **another due date**.
 Submit your answers on Moodle. 
 
-1. Which method is responsible to mark a digit into the cell?
+1. Which method is responsible to mark a digit into a cell?
 2. Which method is responsible to check if there are duplicate values in a box?
 3. What value will the above method return if there are duplicate values in a box?
 
