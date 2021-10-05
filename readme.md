@@ -11,7 +11,7 @@
   * Programming Due: 23:59pm (midnight), 23rd October, 2021 (Saturday) 
 * Download the starter code: [Sudoku.java](Sudoku.java) and the puzzle [sudoku1.txt](sudoku1.txt)
 * Download the demo program: [here](demo.jar)
-* Download everything from the assignment: [here](./archive/refs/heads/master.zip)
+* Download everything from the assignment: [here](https://github.com/khwang0/COMP2026-2122PA1/archive/refs/heads/master.zip)
 
 > To run the demo program on Windows, download the puzzle file `sudoku1.txt` and `demo.jar` under the same directory type the following in your terminal:
 > 
